@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #b1e0e6;
+  left: 0;
+  top: 0;
+  margin: 0;
+  overflow: hidden;
+  color: #000;
+  font-size: 18px;
+}
+
+.spine {
+  width: 100px;
+  height: 100%;
+  position: relative;
+  left: 0vw;
+  top: 0;
+  background: white;
+  border-left: 2px solid black;
+  transition: transform 0.5s;
+  z-index: 4;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}

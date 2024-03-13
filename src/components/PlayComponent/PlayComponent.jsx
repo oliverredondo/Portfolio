@@ -1,10 +1,10 @@
-import "./AboutComponent.css";
+import "./PlayComponent.css";
 
-function AboutComponent() {
+function PlayComponent() {
   return (
     <>
-      <div className="about">
-        <div className="title">About</div>
+      <div className="play">
+        <div className="title">Play</div>
         <p className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor
           euismod arcu sit amet hendrerit. Sed vel rutrum sem. Nunc egestas
@@ -22,4 +22,4 @@ function AboutComponent() {
   );
 }
 
-export default AboutComponent;
+export default PlayComponent;

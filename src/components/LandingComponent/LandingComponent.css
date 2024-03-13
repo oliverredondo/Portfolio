@@ -1,4 +1,13 @@
 .landing {
   height: 100vh;
-  z-index: -3;
+  background-color: #b1e0e6;
+  /* overflow: hidden; */
+  color: #000;
+  font-size: 18px;
+}
+
+.name {
+  font-size: 15rem;
+  display: flex;
+  flex-direction: column;
 }

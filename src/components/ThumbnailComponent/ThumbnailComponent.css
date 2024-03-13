@@ -1,0 +1,50 @@
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 500px;
+}
+
+.project-title-bar {
+  width: 100%;
+  height: 17px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+.icon-circle {
+  position: absolute;
+  left: 15px;
+  top: 4px;
+  vertical-align: middle;
+  /* top: 50%; */
+  font-size: 0px;
+  /* top: 0px;*/
+}
+
+.icon-circle span {
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.projectImage {
+  background-image: url(/src/assets/images/projects/ExcuseGenerator.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 56%;
+  width: 100%;
+  border: 1px solid;
+  border-width: 0px 1px 1px 1px;
+  filter: grayscale(100%) contrast(100%);
+}
+
+.projectImage:hover {
+  filter: grayscale(0%) contrast(100%);
+}

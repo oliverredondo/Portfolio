@@ -1,10 +1,15 @@
 import "./LandingComponent.css";
+import ProjectComponent from "../ThumbnailComponent/ThumbnailComponent";
 
 function LandingComponent() {
   return (
     <>
       <div className="landing">
-        <p className="">Click on the Vite and React logos to learn more</p>
+        <div></div>
+        <div className="name">
+          <span>oliver</span>
+          <span>redondo</span>
+        </div>
       </div>
     </>
   );

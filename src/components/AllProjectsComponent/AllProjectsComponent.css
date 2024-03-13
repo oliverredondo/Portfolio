@@ -1,7 +1,7 @@
-.about {
-  background-color: #2e8b57;
+.projects {
+  background-color: #f0e68d;
   height: 100vh;
-  border: solid 2px black;
+  display: flex;
 }
 
 .title {

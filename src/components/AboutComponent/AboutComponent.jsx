@@ -1,21 +1,44 @@
+import React, { useState } from "react";
 import "./AboutComponent.css";
 
 function AboutComponent() {
+  const [expanded, setExpanded] = useState(false);
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    if (!expanded) {
+      setHovered(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!expanded) {
+      setHovered(false);
+    }
+  };
+
   return (
     <>
-      <div className="about">
-        <div className="title">About</div>
-        <p className="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor
-          euismod arcu sit amet hendrerit. Sed vel rutrum sem. Nunc egestas
-          tortor et ante sodales accumsan. Mauris in nulla at ligula facilisis
-          molestie. Quisque vitae ex viverra, tincidunt libero a, efficitur
-          odio. Fusce vitae sapien sapien. Curabitur ac justo neque. Mauris
-          eleifend, nisi at consequat finibus, nulla nunc venenatis libero,
-          vitae ullamcorper sapien magna sit amet elit. Nulla facilisi. Donec a
-          ante auctor, faucibus nunc ut, commodo mi. Vivamus egestas vel ex non
-          efficitur. Fusce hendrerit tellus in nisi pretium, non lacinia neque
-          vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <div
+        className={`about ${expanded ? "expanded" : ""} ${
+          hovered ? "hovered" : ""
+        }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="title" onClick={() => setExpanded(!expanded)}>
+          About
+        </div>
+        <p className="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue
+          quis mauris ac bibendum. Pellentesque quis purus ut augue malesuada
+          ornare ac bibendum tortor. Praesent pretium, dolor sed convallis
+          suscipit, dui ex blandit arcu, in lacinia lacus mauris eget elit. Duis
+          eleifend feugiat enim, auctor rhoncus justo convallis sit amet. Etiam
+          dignissim rutrum tellus eget vulputate. Aenean eleifend eu turpis a
+          egestas. Etiam a consectetur augue. Vestibulum vitae lacus dolor.
+          Donec efficitur magna ac cursus feugiat. Curabitur gravida quam a
+          massa pharetra facilisis.
         </p>
       </div>
     </>
